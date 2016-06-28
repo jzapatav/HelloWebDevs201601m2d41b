@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hellowebdevs</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<ul id="navbar">
+  <li><%= link_to "Home", pages_index_path %></li>
+  <li><%= link_to "About Us", pages_about_us_path %></li>
+  <li><%= link_to "Terms Of Service", pages_tos_path %></li>
+  <li><%= link_to "FAQ", pages_faq_path %></li>
+  <li> <%= link_to "Contac Us", pages_contact_us_path %></li>
+</ul>
+<%= yield %>
+
+</body>
+</html>
